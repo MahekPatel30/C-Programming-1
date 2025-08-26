@@ -6,7 +6,9 @@ void main()
     scanf("%d",&n);
     for(int i=1;i<=n;i++)
     {
-        s=s+i;
+        s=s+(2*i);
     }
     printf("%d\n",s);
 }
+
+
