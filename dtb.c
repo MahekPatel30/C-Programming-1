@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+
+void decimalToBinary(int n);
+
+int main() {
+    int num;
+
+    printf("Enter a decimal number: ");
+    scanf("%d", &num);
+
+    printf("Binary representation of %d is: ", num);
+    decimalToBinary(num);
+    printf("\n");
+
+    return 0;
+}
+
+
+void decimalToBinary(int n) {
+    if (n == 0)
+        return;
+
+    decimalToBinary(n / 2);
+    printf("%d", n % 2);
+}
+
